@@ -67,7 +67,7 @@ body{
     background-position: center;
     color:rgb(255, 7, 7);
     animation:pulse 1.9s infinite alternate , fonting 4s infinite alternate;
-    font-size: 160px;
+    font-size: 230px;
     display: flex;
     justify-content: center;
     align-items: center;
