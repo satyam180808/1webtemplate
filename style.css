@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+#navbar{
+    padding-left: 20px;
+    position:sticky;
+    top:0;
+    left:0;
+    width:100%;
+    height:70px;
+    font-size: 40px;
+    background-color: rgba(255, 255, 255, 0.11);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    backdrop-filter:blur(4px);
+
+}
+
+#navbar a{
+    left:20px;
+    text-decoration: none;
+    color: rgb(30, 255, 210);
+    text-shadow:0px 0px 8px rgb(90, 115, 113)
+}
+#navbar div{
+    position:fixed;
+    right: 40px;
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    border : 3px solid black;
+    overflow: hidden;
+}
+
+#navbar div img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+
+}
+
+@keyframes pulse {
+  from { text-shadow: 0 0 10px #de16af; }
+  to { text-shadow: 0 0 25px #caa617, 0 0 10px #15dad0; }
+}
+
+@keyframes fonting{
+    from{ font-size:160px; }
+    to{ font-size:170px; }
+}
+
+
+#displaybackground{
+    height:100vh;
+    width:100vw;
+    background-size: cover;
+    background-position: center;
+    color:rgb(255, 7, 7);
+    animation:pulse 1.9s infinite alternate , fonting 4s infinite alternate;
+    font-size: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#specialization{
+    position:absolute;
+    bottom:-700px;
+    font-size: 30px;
+    text-shadow: 0px 0px 8px black;
+    text-align: center;
+}
+
+#paraspecalize {
+    color: rgb(25, 218, 173);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#specialization{
+    color: white;
+}
+
+#intoduction{
+    height:300px;
+    width:690px;
+    position:absolute;
+    left:20px;
+    color: rgb(9, 212, 248);
+    text-shadow: none;
+    font-size: 28px;
+    bottom:-1100px;
+    text-align: justify;
+
+}
+
+#intoduction h2{
+    color: white;
+}
+#aboutus{
+    height:300px;
+    width:690px;
+    position:absolute;
+    right:20px;
+    color: rgb(9, 212, 248);
+    text-shadow: none;
+    font-size: 28px;
+    bottom:-1700px;
+    text-align: justify;
+}
+#aboutus h2{
+    color: white;
+}
